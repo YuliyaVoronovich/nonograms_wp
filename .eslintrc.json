@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es2021": true
+    },
+    "extends": [ 
+        "eslint:recommended",
+        "prettier"
+    ],
+    "parser": "@babel-eslint",
+    "parserOptions": {
+        "babelOptions": {
+            "parserOpts": {
+              "plugins": ["importAssertions"]
+            }
+          },
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "error" // Обязательно!! Подсвечивает ошибки из Prettier.
+    }
+}
