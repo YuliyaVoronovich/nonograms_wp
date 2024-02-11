@@ -7,7 +7,8 @@
     "start": "webpack-dev-server",
     "build-dev": "webpack",
     "build-prod": "webpack --node-env=production",
-    "clear": "rd /s /q dist"
+    "clear": "rd /s /q dist",
+    "deploy": "npm run build && npx gh-pages -d dist -e nonograms"
   },
   "keywords": [],
   "author": "",
